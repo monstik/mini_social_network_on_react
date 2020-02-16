@@ -1,0 +1,16 @@
+.navBar {
+    grid-area: n;
+    background: green;
+}
+
+.item {
+}
+
+.item a {
+    color: azure;
+    text-decoration: none;
+}
+
+.item a.active {
+    color: darkblue;
+}
