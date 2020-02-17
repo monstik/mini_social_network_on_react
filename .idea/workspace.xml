@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ca24928-dde7-4ffc-8f37-a55848fff462" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +80,7 @@
       <workItem from="1581684089874" duration="200000" />
       <workItem from="1581690902783" duration="2819000" />
       <workItem from="1581851134121" duration="9335000" />
-      <workItem from="1581937277397" duration="4061000" />
+      <workItem from="1581937277397" duration="4777000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring">
       <created>1581880540225</created>
@@ -89,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581880540225</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Использовал метод масива map для оптимизации и сокращения кода">
+      <created>1581956195159</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581956195159</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <MESSAGE value="Использовал метод масива map для оптимизации и сокращения кода" />
+    <option name="LAST_COMMIT_MESSAGE" value="Использовал метод масива map для оптимизации и сокращения кода" />
   </component>
 </project>
