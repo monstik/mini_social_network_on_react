@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ca24928-dde7-4ffc-8f37-a55848fff462" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/Post/Post.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/Post/Post.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,10 +47,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -80,7 +95,11 @@
       <workItem from="1581684089874" duration="200000" />
       <workItem from="1581690902783" duration="2819000" />
       <workItem from="1581851134121" duration="9335000" />
-      <workItem from="1581937277397" duration="4777000" />
+      <workItem from="1581937277397" duration="10818000" />
+      <workItem from="1582025142849" duration="513000" />
+      <workItem from="1582025708316" duration="3068000" />
+      <workItem from="1582041455955" duration="1229000" />
+      <workItem from="1582108910879" duration="17367000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring">
       <created>1581880540225</created>
@@ -96,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581956195159</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Добавил map в MyPosts">
+      <created>1581956656880</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581956656880</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +144,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactoring" />
     <MESSAGE value="Использовал метод масива map для оптимизации и сокращения кода" />
-    <option name="LAST_COMMIT_MESSAGE" value="Использовал метод масива map для оптимизации и сокращения кода" />
+    <MESSAGE value="Добавил map в MyPosts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил map в MyPosts" />
   </component>
 </project>

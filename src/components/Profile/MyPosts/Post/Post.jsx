@@ -3,10 +3,16 @@ import Style from "./Post.module.css"
 
 
 const Post = (props) => {
-    return(
+    return (
         <div className={Style.item}>
             <img src={props.img} alt="картинка"/>
-            post1
+            <div>
+                post{props.id}
+            </div>
+            <div>
+                Описание: {props.description}
+            </div>
+
         </div>
     );
 };
