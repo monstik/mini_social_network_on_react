@@ -1,5 +1,6 @@
 import React from "react";
 import Style from "./ProfileInfo.module.css";
+import {addPostCreator, updateNewPostSrcCreator, updateNewPostTextCreator} from "../../../redux/profile_reducer";
 
 class ProfileInfo extends React.Component {
 
@@ -10,21 +11,20 @@ class ProfileInfo extends React.Component {
         this.OnChangePostSrc = this.OnChangePostSrc.bind(this);
     }
 
-    state = {
-        src: '',
-    };
+
+
 
     test(event) {
         event.preventDefault();
-        this.props.addPost();
+        this.props.dispatch(addPostCreator());
     };
 
     OnChangePostText(event) {
-        this.props.updateNewPostText(event.target.value);
+        this.props.dispatch(updateNewPostTextCreator(event.target.value));
     };
 
     OnChangePostSrc(event) {
-        this.props.updateNewPostSrc(event.target.value);
+        this.props.dispatch(updateNewPostSrcCreator(event.target.value));
     };
 
 

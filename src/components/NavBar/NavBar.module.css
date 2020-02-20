@@ -1,6 +1,6 @@
 .navBar {
     grid-area: n;
-    background: green;
+    background: #21252b;
 }
 
 .item {
@@ -12,5 +12,5 @@
 }
 
 .item a.active {
-    color: darkblue;
+    color: #56b8d5;
 }
