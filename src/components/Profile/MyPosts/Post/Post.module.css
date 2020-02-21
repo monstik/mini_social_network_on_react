@@ -1,8 +1,52 @@
 .item{
     padding: 10px;
+    width: 700px;
+    margin: 0 auto;
 }
+
+.deleteButton {
+    color: red;
+    height: 50px;
+
+
+}
+
+.deleteButton button{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    float: right;
+    color: white;
+    width: 50px;
+    height: 50px;
+
+
+}
+
+.deleteButton button:focus{
+   outline: none;
+
+
+}
+
+.deleteButton button:hover{
+  background-color: #21252b;
+}
+
+
+
+
+
 
 .item img{
     width: 500px;
     border-radius: 40px;
+    text-align: center;
+
+}
+
+.descriptionBlock {
+    text-align: left;
+
 }

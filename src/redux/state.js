@@ -33,6 +33,7 @@ let store = {
             ],
             newPostText: '',
             newPostSrc: '',
+
         },
         dialogsPage: {
             dialogs: [
