@@ -1,60 +1,48 @@
 import React from "react";
 import Style from "./ProfileInfo.module.css";
-import {addPostCreator, updateNewPostSrcCreator, updateNewPostTextCreator} from "../../../redux/profile_reducer";
-
-class ProfileInfo extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.test = this.test.bind(this);
-        this.OnChangePostText = this.OnChangePostText.bind(this);
-        this.OnChangePostSrc = this.OnChangePostSrc.bind(this);
-    }
 
 
+const ProfileInfo = (props) => {
 
 
-    test(event) {
+    let onAddPost = (event) => {
         event.preventDefault();
-        this.props.dispatch(addPostCreator());
+        props.addPost();
     };
 
-    OnChangePostText(event) {
-        this.props.dispatch(updateNewPostTextCreator(event.target.value));
+    let onChangePostText = (event) => {
+        props.updatePostText(event.target.value);
     };
 
-    OnChangePostSrc(event) {
-        this.props.dispatch(updateNewPostSrcCreator(event.target.value));
+    let onChangePostSrc = (event) => {
+        props.updatePostSrc(event.target.value);
     };
 
+    return (
+        <div className={Style.profileInfo}>
+            <h2 className={Style.profileInfo}>Profile</h2>
 
-    render() {
+            <form onSubmit={onAddPost}>
+                <div>
+                    <label>
+                        Описание:
+                        <input type="text" onChange={onChangePostText} value={props.newPostText}/>
+                    </label>
+                </div>
 
-        return (
-            <div className={Style.profileInfo}>
-                <h2 className={Style.profileInfo}>Profile</h2>
+                <div>
+                    <label>
+                        Путь к картинке:
+                        <input type="text" onChange={onChangePostSrc} value={props.newPostSrc}/>
+                    </label>
+                </div>
 
-                <form onSubmit={this.test}>
-                    <div>
-                        <label>
-                            Описание:
-                            <input type="text" onChange={this.OnChangePostText} value={this.props.newPostText}/>
-                        </label>
-                    </div>
+                <button>Добавить пост</button>
+            </form>
 
-                    <div>
-                        <label>
-                            Путь к картинке:
-                            <input type="text" onChange={this.OnChangePostSrc} value={this.props.newPostSrc}/>
-                        </label>
-                    </div>
+        </div>
+    );
 
-                    <button>Добавить пост</button>
-                </form>
-
-            </div>
-        );
-    };
 };
 
 

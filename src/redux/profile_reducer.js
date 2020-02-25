@@ -3,50 +3,76 @@ const DELETE_POST = "DELETE-POST";
 const UPDATE_NEW_POST_TEXT = "UPDATE-NEW-POST-TEXT";
 const UPDATE_NEW_POST_SRC = "UPDATE-NEW-POST-SRC";
 
+let initialState = {
+    posts: [
+        {
+            id: 1,
+            src: "https://s1.1zoom.ru/b5050/460/Tanks_441653_3840x2400.jpg",
+            description: ''
+        },
+        {
+            id: 2,
+            src: "https://im0-tub-ua.yandex.net/i?id=8b5cd3e1b249a8fb5603cd8e63db9165&n=13",
+            description: ''
+        },
+        {
+            id: 3,
+            src: "https://pbs.twimg.com/media/EFJA1rPWwAARCn4.jpg",
+            description: ''
+        },
+        {
+            id: 4,
+            src: "https://avatars.mds.yandex.net/get-pdb/1870806/26358703-dca3-4f2b-a96f-56926fef5a21/s1200",
+            description: ''
+        },
+        {
+            id: 5,
+            src: "https://avatars.mds.yandex.net/get-zen_doc/1704908/pub_5da30ee7a3f6e400b272fe3f_5da3106c79c26e6477406ac6/scale_1200",
+            description: ''
+        },
+    ],
+    newPostText: '',
+    newPostSrc: '',
+};
 
-const profileReducer = (state, action) => {
 
-
-    let addPost = () => {
-        let newPost = {
-            id: Object.keys(state.posts).length + 1,
-            src: state.newPostSrc,
-            description: state.newPostText,
-        };
-        state.posts.unshift(newPost);
-        state.newPostText = '';
-        state.newPostSrc = '';
-
-    };
-
-    let deletePost = (id) => {
-
-     //   console.log( state.posts.find(post => post.id === id));
-
-        let index = state.posts.indexOf(state.posts.find(post => post.id === id));
-        state.posts.splice(index, 1);
-    };
-
+const profileReducer = (state = initialState, action) => {
 
     switch (action.type) {
+
         case ADD_POST:
-            addPost();
-            break;
+            let newPost = {
+                id: Object.keys(state.posts).length + 1,
+                src: state.newPostSrc,
+                description: state.newPostText,
+            };
+
+            return {
+                ...state,
+                posts: [newPost, ...state.posts],
+                newPostText: '',
+                newPostSrc: '',
+            };
+
         case UPDATE_NEW_POST_TEXT:
-            state.newPostText = action.newText;
-            break;
+            return {...state, newPostText: action.newText,};
+
         case UPDATE_NEW_POST_SRC:
-            state.newPostSrc = action.newSrc;
-            break;
+            return {...state, newPostSrc: action.newSrc};
+
         case DELETE_POST:
-            deletePost(action.id);
-            break;
+            let index = state.posts.indexOf(state.posts.find(post => post.id === action.id));
+            let posts = [...state.posts];
+            posts.splice(index, 1);
+            return {
+                ...state,
+                posts: posts,
+            };
+
         default:
-            break;
+            return state;
     }
 
-
-    return state;
 };
 
 

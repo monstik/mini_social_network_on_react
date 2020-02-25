@@ -1,12 +1,10 @@
 import React from "react";
 import Style from "./Post.module.css"
-import {deletePostCreator} from "../../../../redux/profile_reducer";
 
 
 const Post = (props) => {
-
     let onClickDelete = () => {
-        props.dispatch(deletePostCreator(props.id));
+        props.deletePost(props.id);
     };
 
 
